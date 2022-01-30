@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="product">
+        <div class="product-small-img">
+            <img src="images/m-dtaw20jk014b-ducati-original-imafxtfsxgzcshhq.jpeg" onclick="myFunction(this)">
+            <img src="images/m-dtaw20jk014b-ducati-original-imafxtfr5szb4eb5.jpeg" onclick="myFunction(this)">
+            <img src="images/m-dtaw20jk014b-ducati-original-imafxtfrwznqybvy.jpeg" onclick="myFunction(this)">
+            <img src="images/m-dtaw20jk014b-ducati-original-imafxtfrynbhacva.jpeg" onclick="myFunction(this)">
+            <img src="images/m-dtaw20jk014b-ducati-original-imafxs4ead7p5gvg.jpeg" onclick="myFunction(this)">
+        </div>
+        <div class="img-container">
+            <img id="myid" src="images/m-dtaw20jk014b-ducati-original-imafxs4ead7p5gvg.jpeg">
+        </div>
+    </div>
+
+    <script>
+        function myFunction(smallImg)
+        {
+            var fullImg = document.getElementById("myid");
+            fullImg.src=smallImg.src;
+        }
+    </script>
+</body>
+</html>
